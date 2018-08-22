@@ -214,7 +214,7 @@ RouterFunction<ServerResponse> helloRouterFunction() {
 }
 ```
 
-Ahora queremos cargar alguna datos en el inicio de la aplicación. Vamos a actualizar nuestro archivo `MainApplication.java`
+Ahora queremos cargar algunos datos al inicio de la aplicación. Vamos a actualizar nuestro archivo `MainApplication.java`
 
 ```java
 @Bean
