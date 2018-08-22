@@ -29,6 +29,7 @@ Vamos a implementar, un servicio Rest CRUD el cual hará todas las operaciones r
 
 - Navega a [https://start.spring.io/](https://start.spring.io/)
 - Introduce el nombre del proyecto y el nombre del paquete tal como es requerido.
+- Seleciona 2.1.0 (SNAPSHOT) Spring Boot
 - Selecciona **Reactive Web** y **Reactive MongoDb** como dependencias del proyecto.
 - Click en generar.
 - Importa el proyecto a tu IDE favorito y crea la siguiente estructura:
@@ -37,7 +38,7 @@ Vamos a implementar, un servicio Rest CRUD el cual hará todas las operaciones r
 
 ### Configura tu aplicación
 
-Necesitamos anotar nuestra clase spring con @EnableReactiveMongoRepositories. Cualquiera anotación en módulos spring reactivos empezaran con el predicado **Enable…** seguido por **Reactive**. Finalmente activamos los repositorios de la API de persistencia JPA MongoDB reactivos de datos spring usando la anotación @EnableReactiveMongoRepositories el cual lleva los mismos atributos como el espacio de nombre XML hace.  Si el paquete base no es configurado el usará el de la clase de configuración en la cual reside.
+Vamos anotar nuestra clase spring con @EnableReactiveMongoRepositories. Cualquiera anotación en módulos spring reactivos empezaran con el predicado **Enable…** seguido por **Reactive**. Activamos los repositorios de la API de persistencia JPA MongoDB reactivos de datos spring usando la anotación @EnableReactiveMongoRepositories el cual lleva los mismos atributos como el espacio de nombre en el XML. Si el paquete base no es configurado el usará el de la clase de configuración en la cual reside.
 
 ```java
 package com.frugalis.ReactiveRest;
