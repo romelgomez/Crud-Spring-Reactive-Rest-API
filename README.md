@@ -122,7 +122,7 @@ La clase User es anotada con `@Document`, indicando que es una entidad JPA (Api 
 
 Escribimos en nuestro repositorio para acceder a la database usando el marcador de interfaz de repositorio proporcionado por datos spring. Vamos a usar `@ReactiveMongoRepository`  el cual extiende `@ReactiveCrudRepository`. Estas interfaces nos proporcionan algunas operaciones básicas necesarias tal como, `save()`, `update()`, `findAll()`, `findById()` etc.
 
-Nosotros podemos también escribir métodos plantillas los cuales internamente generan solicitudes o querys basados en la firma del método. En el código anterior  estamos escribiendo un método `findByName()` el cual escribirá una solicitud o query para seleccionar la colección en base al nombre.
+Nosotros podemos también escribir métodos plantillas los cuales internamente generan solicitudes o querys basados en la firma del método. En el siguiente código estamos escribiendo un método `findByName()` el cual escribirá una solicitud o query para seleccionar la colección en base al nombre.
 
 ```java
 package com.frugalis.ReactiveRest.repository;
