@@ -245,6 +245,8 @@ CommandLineRunner runner() {
 
 Nosotros podemos ver que luego de retornar mono desde  `userRepository`  tenemos que suscribirnos, la ejecución sólo sucederá si se subscribe,  Tal cómo debes conocer en mis previos artículos, [Creando un servicio Rest con spring boot](http://frugalisminds.com/spring/creating-rest-service-spring-boot/) vimos cómo probamos el código usando **Postman**. Porfa sigue probando usando Postman.
 
+Ejecuta `mvn spring-boot:run` desde la terminal. Si estás en un subdirectorio asegurate de ejecutar el comando en el directorio donde esta el archivo `pom.xml`, luego prueba con Postman. 
+
 ## Integración  de la API Rest de prueba
 
 Ahora que hemos creado una API Rest CRUD con programación reactiva Spring Web-Flux con spring 5, es tiempo de escribir alguna prueba de integración. Nosotros vamos a usar WebTestClient.
