@@ -29,7 +29,8 @@ Vamos a implementar, un servicio Rest CRUD el cual hará todas las operaciones r
 
 - Navega a [https://start.spring.io/](https://start.spring.io/)
 - Introduce el nombre del proyecto y el nombre del paquete tal como es requerido.
-- Selecciona Reactive Web y Reactive MongoDb como dependencias del proyecto.
+- Seleciona 2.1.0 (SNAPSHOT) Spring Boot
+- Selecciona **Reactive Web** y **Reactive MongoDb** como dependencias del proyecto.
 - Click en generar.
 - Importa el proyecto a tu IDE favorito y crea la siguiente estructura:
 
@@ -37,7 +38,7 @@ Vamos a implementar, un servicio Rest CRUD el cual hará todas las operaciones r
 
 ### Configura tu aplicación
 
-Necesitamos anotar nuestra clase spring con @EnableReactiveMongoRepositories. Cualquiera anotación en módulos spring reactivos empezaran con el predicado **Enable…** seguido por **Reactive**. Finalmente activamos los repositorios de la API de persistencia JPA MongoDB reactivos de datos spring usando la anotación @EnableReactiveMongoRepositories el cual lleva los mismos atributos como el espacio de nombre XML hace.  Si el paquete base no es configurado el usará el de la clase de configuración en la cual reside.
+Vamos anotar nuestra clase spring con @EnableReactiveMongoRepositories. Cualquiera anotación en módulos spring reactivos empezaran con el predicado **Enable…** seguido por **Reactive**. Activamos los repositorios de la API de persistencia JPA MongoDB reactivos de datos spring usando la anotación @EnableReactiveMongoRepositories el cual lleva los mismos atributos como el espacio de nombre en el XML. Si el paquete base no es configurado el usará el de la clase de configuración en la cual reside.
 
 ```java
 package com.frugalis.ReactiveRest;
@@ -121,7 +122,7 @@ La clase User es anotada con `@Document`, indicando que es una entidad JPA (Api 
 
 Escribimos en nuestro repositorio para acceder a la database usando el marcador de interfaz de repositorio proporcionado por datos spring. Vamos a usar `@ReactiveMongoRepository`  el cual extiende `@ReactiveCrudRepository`. Estas interfaces nos proporcionan algunas operaciones básicas necesarias tal como, `save()`, `update()`, `findAll()`, `findById()` etc.
 
-Nosotros podemos también escribir métodos plantillas los cuales internamente generan solicitudes o querys basados en la firma del método. En el código anterior  estamos escribiendo un método `findByName()` el cual escribirá una solicitud o query para seleccionar la colección en base al nombre.
+Nosotros podemos también escribir métodos plantillas los cuales internamente generan solicitudes o querys basados en la firma del método. En el siguiente código estamos escribiendo un método `findByName()` el cual escribirá una solicitud o query para seleccionar la colección en base al nombre.
 
 ```java
 package com.frugalis.ReactiveRest.repository;
@@ -213,7 +214,7 @@ RouterFunction<ServerResponse> helloRouterFunction() {
 }
 ```
 
-Ahora queremos cargar alguna datos en el inicio de la aplicación. Vamos a actualizar nuestro archivo `MainApplication.java`
+Ahora queremos cargar algunos datos al inicio de la aplicación. Vamos a actualizar nuestro archivo `MainApplication.java`
 
 ```java
 @Bean
@@ -243,6 +244,8 @@ CommandLineRunner runner() {
 ```
 
 Nosotros podemos ver que luego de retornar mono desde  `userRepository`  tenemos que suscribirnos, la ejecución sólo sucederá si se subscribe,  Tal cómo debes conocer en mis previos artículos, [Creando un servicio Rest con spring boot](http://frugalisminds.com/spring/creating-rest-service-spring-boot/) vimos cómo probamos el código usando **Postman**. Porfa sigue probando usando Postman.
+
+Ejecuta `mvn spring-boot:run` desde la terminal. Si estás en un subdirectorio asegurate de ejecutar el comando en el directorio donde esta el archivo `pom.xml`, luego prueba con Postman. 
 
 ## Integración  de la API Rest de prueba
 
