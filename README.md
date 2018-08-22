@@ -1,11 +1,8 @@
 # Crud-Spring-Reactive-Rest-API
-<h2>What Is Reactive Programming:-</h2>
-<h5>Reactive programming is about non-blocking, event-driven applications that scale with a minimum number of threads.
-It is often known as Functional Programming as well.
-Spring uses Reactive Streams to implement reactive programming.
-If you are from a normal Java background then reactive programming is a bit more learning curve for you.Spring Framework 5.0  
-has reactive features built into it using Reactive Core and Reactive Streams Specification .Lmme tell you a use case where reactive programming is best suited.Think of a system where a huge number of system events are produced and consumed asynchronusly. If your system is not able to process a huge streams of data or lets say you are getting huge amount of input streams of data  to your system and you end up with resource shortage every time .
-In today's world the flow of data is even more that it was from 5 years ago .Even when you are sleeping you mobile phones and tablets are continuously exchanging a huge amount of data and at a much greater pace.Hence implementation of this type of programming model will help our applications to scale much more than it was few years ago.
+<h2>Qué es programación reactiva:</h2>
+
+<h5>
+Programación reactiva es sobre aplicaciones sin bloqueos, controladas por eventos que escalan con un mínimo número de hilos. Es a menudo conocido como programación funcional también. Spring usa flujos reactivos para implementar programación reactiva. Si  provienes de la forma tradicional, entonces la programación reactiva es un poco más como una curva de aprendizaje para ti. Spring Framework 5.0 tiene integradas características reactivas usando el núcleo reactivo y la especificación de flujos reactivos. Un uso de caso donde la programación reactiva encaja perfectamente. Piensa en un sistema donde un número grande de eventos del sistema son producidos y consumidos de forma asíncrona. Si su sistema no puede procesar un alto número de datos o estas teniendo una alta cantidad de entradas de flujos de datos, su sistema todo el tiempo terminará con recursos escasos. En el mundo de hoy, el flujo de datos es mucho más que hace 5 años atrás. Incluso cuando duermes tus teléfonos y tablets están cambiando una alta cantidad de datos a un ritmo mucho mayor. Por lo tanto este tipo de modelo de programación ayudaran a nuestras aplicaciones a escalar mucho más que de lo que era hace algunos años.   
 </h5>
 
-<h1>http://frugalisminds.com/spring/crud-rest-api-with-spring-web-flux-reactive-programming-with-spring-5/</h1>
+<h4>http://frugalisminds.com/spring/crud-rest-api-with-spring-web-flux-reactive-programming-with-spring-5/</h4>
