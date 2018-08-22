@@ -29,7 +29,7 @@ Vamos a implementar, un servicio Rest CRUD el cual hará todas las operaciones r
 
 - Navega a [https://start.spring.io/](https://start.spring.io/)
 - Introduce el nombre del proyecto y el nombre del paquete tal como es requerido.
-- Selecciona Reactive Web y Reactive MongoDb como dependencias del proyecto.
+- Selecciona **Reactive Web** y **Reactive MongoDb** como dependencias del proyecto.
 - Click en generar.
 - Importa el proyecto a tu IDE favorito y crea la siguiente estructura:
 
